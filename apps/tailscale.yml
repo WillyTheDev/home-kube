@@ -6,10 +6,10 @@ metadata:
 spec:
   project: default
   source:
-    # L'URL exacte sans le tiret
     repoURL: 'https://pkgs.tailscale.com/helmcharts'
     chart: tailscale-operator
-    targetRevision: 1.76.0
+    # Utilisation de la version exacte trouvée dans l'index
+    targetRevision: 1.94.2
     helm:
       values: |
         oauth:
