@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://pkgs.tailscale.com/helm-charts'
+    repoURL: 'https://tailscale.github.io/helm-charts'
     chart: tailscale-operator
     targetRevision: 1.76.0
     helm:
