@@ -5,9 +5,8 @@ metadata:
   namespace: argocd
   annotations:
     tailscale.com/hostname: "argo-cd-kube"
-    tailscale.com/backend-protocol: "https"
     tailscale.com/tags: "tag:k8s-operator"
-    tailscale.com/tls-skip-verify: "true"
+    tailscale.com/backend-protocol: "https"
 spec:
   ingressClassName: tailscale
   rules:
@@ -19,4 +18,4 @@ spec:
           service:
             name: argocd-server
             port:
-              name: https
+              number: 8080
