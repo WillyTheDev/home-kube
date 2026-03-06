@@ -6,10 +6,12 @@ metadata:
   annotations:
     tailscale.com/hostname: "argo-cd-kube"
     tailscale.com/backend-protocol: "https"
+    tailscale.com/tags: "tag:k8s-operator"
+    tailscale.com/tls-skip-verify: "true"
 spec:
   ingressClassName: tailscale
   rules:
-  -  http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
