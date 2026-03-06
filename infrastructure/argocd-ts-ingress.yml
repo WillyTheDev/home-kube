@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     tailscale.com/hostname: "argo-cd-kube"
+    tailscale.com/backend-protocol: "https"
 spec:
   ingressClassName: tailscale
   rules:
