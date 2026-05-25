@@ -47,12 +47,12 @@ spec:
   - hosts:
     - grafana-tailscale
   rules:
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: kube-prometheus-stack-grafana
-            port:
-              number: 80
+  - http:
+    paths:
+    - path: /
+      pathType: Prefix
+      backend:
+        service:
+          name: kube-prometheus-stack-grafana
+          port:
+            number: 80
