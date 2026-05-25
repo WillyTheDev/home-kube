@@ -14,7 +14,7 @@ spec:
   - hosts:
     - argocd-tailscale
   rules:
-    - http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
