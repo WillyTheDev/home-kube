@@ -10,7 +10,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   ingressClassName: tailscale
+  tls:
+  - hosts:
+    - argocd-tailscale
   rules:
+  - host: argocd-argocd-tailscale-ingress-1.sardine-capella.ts.net
   - http:
       paths:
       - path: /
@@ -19,4 +23,4 @@ spec:
           service:
             name: argocd-server
             port:
-              number: 443
+              number: 80

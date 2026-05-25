@@ -43,8 +43,12 @@ metadata:
     tailscale.com/hostname: "grafana-kube"
 spec:
   ingressClassName: tailscale
+  tls:
+  - hosts:
+    - grafana-tailscale
   rules:
-  -  http:
+  - host: monitoring-grafana-tailscale-ingress-1.sardine-capella.ts.net
+    http:
       paths:
       - path: /
         pathType: Prefix
