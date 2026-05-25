@@ -7,6 +7,7 @@ metadata:
     tailscale.com/hostname: "argocd-kube-access" 
     tailscale.com/tags: "tag:k8s-operator"
     tailscale.com/backend-protocol: "https"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   ingressClassName: tailscale
   rules:
