@@ -14,7 +14,6 @@ spec:
   - hosts:
     - argocd-tailscale
   rules:
-  - host: argocd-tailscale-ingress-1.sardine-capella.ts.net
   - http:
       paths:
       - path: /

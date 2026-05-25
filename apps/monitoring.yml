@@ -47,7 +47,6 @@ spec:
   - hosts:
     - grafana-tailscale
   rules:
-  - host: monitoring-grafana-tailscale-ingress-1.sardine-capella.ts.net
     http:
       paths:
       - path: /
